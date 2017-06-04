@@ -1,0 +1,43 @@
+<view class="container">
+  <swiper class="swiper_box" indicator-dots="true" autoplay="true" duration="1000">
+    <swiper-item wx:for="{{image}}" wx:for-item="item">
+      <image src="{{item.images}}" class="slide_image"></image>
+    </swiper-item>
+  </swiper>
+  <view class="text">
+    <view class="line_flag"></view>
+    <text>正在上映</text>
+  </view>
+  <block wx:for="{{movies}}">
+    <view class="item">
+
+      <!--左边部分-->
+      <view class="item_left">
+        <image src="{{item.image}}"></image>
+      </view>
+
+      <!--中间部分-->
+      <view class="item_middle">
+        <view class="title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="sub_title">
+          <text>{{item.subTitle}}</text>
+        </view>
+        <view class="actor">
+          <text>{{item.actor}}</text>
+        </view>
+      </view>
+
+      <!--右边部分-->
+      <view class="item_right">
+        <view class="score">
+          <text>{{item.score}}</text>
+        </view>
+        <view class="action">
+          <text>{{item.action}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

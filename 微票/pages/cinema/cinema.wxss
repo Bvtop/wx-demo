@@ -1,0 +1,45 @@
+.item {
+  padding: 10px;
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+.item_top {
+  width: 70%;
+  height: 95px;
+  margin-top: 10px;
+}
+
+.item_top .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.subTitle{
+    font-size: 14px;
+    color: #666;
+}
+
+.item_bottom {
+  border: 1px solid #29cc6d;
+  border-radius: 2px;
+  color: #29cc6d;
+  padding: 2px 4px;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+.item_right {
+  font-size: 16px;
+  color: #e4393c;
+  position: absolute;
+  right: 30px;
+  font-weight: bold;
+}

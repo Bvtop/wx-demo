@@ -1,0 +1,23 @@
+<view class="container">
+    <block wx:for="{{cinemas}}">
+        <view class="item">
+
+        <view class="item_top">
+            <view class="title">
+                <text>{{item.title}}</text>
+            </view>
+            <view class="subTitle">
+                <text>{{item.subTitle}}</text>
+            </view>
+        </view>
+
+        <view class="item_bottom">
+            <text>{{item.tag}}</text>
+        </view>
+
+        <view class="item_right">
+            <text>{{item.price}}</text>
+        </view>
+        </view>
+    </block>
+</view>
