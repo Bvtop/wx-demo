@@ -1,0 +1,9 @@
+<template name="future-item">
+    <view class="future-item">
+        <view class="">{{item.date}}</view>
+        <view class="">周{{item.week}}</view>
+        <view class="">{{item.nongli}}</view>
+        <view class="">{{item.info.day[1]}}</view>
+        <view class="">{{item.info.night[2]}}℃-{{item.info.day[2]}}℃</view>
+    </view>
+</template>
