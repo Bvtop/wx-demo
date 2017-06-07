@@ -1,0 +1,81 @@
+.header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1rpx solid #ccc;
+    margin-bottom: 40rpx;
+    height: 80rpx;
+}
+.header .search{
+    width: 100%;
+    height: 60rpx;
+    padding: 20rpx 40rpx;
+    color: #666;
+    font-size: 38rpx;
+    text-align: center;
+}
+.header .seach-placeholder{
+    color: #ccc;
+    font-size: 38rpx;
+    text-align: center;
+}
+
+.list{
+    height: 100%;
+}
+.item{
+    display: flex;
+    padding: 40rpx 40rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.poster{
+    width: 128rpx;
+    height: 168rpx;
+    margin-right: 20rpx;
+}
+/*中间电影名称*/
+.meta{
+    flex:1
+}
+.meta .title,
+.meta .sub-title{
+    display: block;
+    margin-bottom: 15rpx;
+}
+.meta .title{
+    font-size: 32rpx;
+}
+.meta .sub-title{
+    font-size: 22rpx;
+    color: #c0c0c0;
+}
+/*导演*/
+.meta .artists{
+    font-size: 24rpx;
+    color: #999;
+}
+/*右边平均分部分*/
+.rating text{
+    display: inline-block;
+    width: 40rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(247, 76, 49, 0.8);
+    color: #fff;
+    padding: 10rpx;
+    border-radius: 20rpx;
+}
+.tips{
+    font-size: 28rpx;
+    text-align: center;
+    padding: 50rpx;
+    color: #ccc;
+}
+.tips image, .tips text{
+    vertical-align: middle;
+}
+.tips image{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 20rpx;
+}

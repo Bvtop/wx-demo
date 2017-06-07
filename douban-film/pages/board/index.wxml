@@ -1,0 +1,51 @@
+<!--scroll-view：可滚动视图区域
+    scroll-x:允许横向滚动
+    scroll-y:允许纵向滚动
+-->
+<scroll-view class="container" scroll-y="true">
+    <!--轮播图-->
+    <view class="slide">
+        <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+            <swiper-item wx:for="{{sliderData}}">
+                <image src="{{item.large}}" mode="aspectFill"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <!--电影信息部分-->
+    <view class="board" scroll-y="true">
+        <!--正在上映部分-->
+        <view class="board-item">
+            <view class="title">
+                <text>正在上映</text>
+            </view>
+            <!--scroll-view：可移动视图区域
+                scroll-x:允许横向滚动
+            -->
+            <scroll-view class="content" scroll-x="true">
+                <view class="inner">
+                    <navigator url="../detail/detail?id={{item.id}}" class="movie-item" wx:for="{{moviesOn}}">
+                    <view>
+                        <image src="{{item.large}}" mode="aspectFill"></image>
+                        <text>{{item.title}}</text>
+                    </view>
+                </navigator>
+                </view>
+            </scroll-view>
+        </view>
+<!--即将上映-->
+<view class="board-item">
+    <view class="title">
+        <text>即将上映</text>
+    </view>
+    <scroll-view class="content" scroll-x="true">
+        <view class="inner">
+        <navigator url="../detail/detail?id={{item.id}}" wx:for="{{moviesComing}}"></navigator>
+        </view>
+    </scroll-view>
+</view>
+
+    </view>
+    
+
+</scroll-view>

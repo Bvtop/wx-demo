@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<!--image组件有13种模式，4种是缩放模式。9种是裁剪模式
+aspectFill:只保证短边能够显示出来，也就是说通常只在宽边（水平）或者长边（垂直）能够显示
+scaleFill:不保存纵横比
+aspectFit:保存纵横比进行缩放，也就说可以完成的讲图片显示出来
+widthFix:宽度不变，高度自动化，保持原图的宽高比不变-->
+<view class="container">
+    <swiper class="splash" indicator-dots="true">
+        <swiper-item wx:for="{{movies}}" wx:key="{{item}}">
+            <image src="{{item.large}}" class="slide-image" mode="aspectFill"></image>
+            <button bindtap="handleStart" class="start" wx:if="{{index == movies.length-1}}">立即体验</button>
+        </swiper-item>
+    </swiper>
+</view>

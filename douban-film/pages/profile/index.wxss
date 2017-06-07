@@ -1,0 +1,74 @@
+page{
+    background: #ebebeb;
+}
+#header{
+    width:100%;
+    height:260px;
+    background: #3080c0;
+    color:#fff;
+}
+#header .content{
+    padding-top:60px;
+    text-align: center;
+}
+#header .content image{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+}
+#header .content .nickname{
+    padding-top:20px;
+}
+#header .content .orther{
+    padding-top:10px;
+    font-size:15px;
+}
+#section .flex-wrap{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    background:#fff;
+    padding:30rpx;
+}
+#section .flex-item{
+    flex:1;
+}
+#section .icon{
+    width:23px;
+    height:23px;
+}
+#section .menus_title{
+    display: block;
+}
+
+#section .menus_title text{
+    font-size:13px;
+}
+#menus{
+    background: #fff;
+    margin-top:10px;
+    height:auto;
+    width:100%;
+}
+#menus .cont{
+    height:45px;
+    border-bottom: 0.5px solid #ebebeb; 
+}
+#menus .cont .view{
+    float: left;
+}
+#menus .cont .view text{
+    font-size:15px;
+    line-height:45px;
+    padding-left:20px;
+}
+#menus .cont .right{
+    height: 45px;
+    float: right;
+    margin-right:10px;
+    line-height: 45px;
+}
+.right image{
+    width:20px;
+    height: 20px;
+}
